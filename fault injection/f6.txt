@@ -1,0 +1,2 @@
+./blade c jvm delay --time 3000 --classname=order.controller.OrderController --methodname=createNewOrder --timeout 300 --effect-percent 100 --pid 1
+

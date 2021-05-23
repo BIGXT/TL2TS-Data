@@ -1,0 +1,1 @@
+./blade create cpu load --cpu-percent 80 --timeout 300

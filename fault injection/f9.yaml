@@ -1,0 +1,22 @@
+apiVersion: chaosblade.io/v1alpha1
+kind: ChaosBlade
+metadata:
+  name: stop-container-by-id
+spec:
+  experiments:
+  - scope: container
+    target: process
+    action: stop
+    desc: "stop container by id"
+    matchers:
+    - name: container-ids
+      value: ["730b9ab0d140e6f758b56ee27fbd055dd8c4bb8dd825bc8b1376473aa3d11781"]
+    - name: process
+      value: ["java"]
+      # pod name
+    - name: names
+      value: ["ts-notification-service-79957fb84f-ffwvr"]
+    - name: namespace
+      value: ["default"]
+    - name: timeout
+      value: ["300"]
