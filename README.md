@@ -36,7 +36,8 @@ TL2TS数据，详见：[TL2TS](https://github.com/BIGXT/TL2TS)
 
 ### fault injection
 
-包含我们用于产生故障注入实验的用例，其中.yaml格式的使用方法为：`kubectl apply -f F*.yaml`
+包含我们用于产生故障注入实验的用例，其中.yaml格式的使用方法为：
+`kubectl apply -f F*.yaml`
 
 ### TL2TS
 
